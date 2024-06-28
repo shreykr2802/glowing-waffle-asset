@@ -13,6 +13,7 @@
             "slNo": "1",
             "heading": "What is Hoisting?",
             "html": "JavaScript Hoisting refers to the process whereby the interpreter appears to move the declaration of functions, variables, classes, or imports to the top of their scope, prior to execution of the code.",
+            "codeType": "javascript",
             "code": "console.log(x); // Output: undefined\nvar x = 5;\nconsole.log(x); // Output: 5",
             "image": ""
           },
@@ -20,6 +21,7 @@
             "slNo": "2",
             "heading": "Hoisting of Functions",
             "html": "The below code runs without any error, despite the hoistedFunction() function being called before it's declared. This is because the JavaScript interpreter hoists the entire function declaration to the top of the current scope.",
+            "codeType": "javascript",
             "code": "hoistedFunction(); // Output: 'This function has been hoisted.'\n\nfunction hoistedFunction() {\n  console.log('This function has been hoisted.');\n}",
             "image": ""
           },
@@ -28,6 +30,7 @@
             "heading": "Understanding Closures",
             "html": "",
             "code": "function outerFunction(outerVariable) {\n  return function innerFunction(innerVariable) {\n    console.log('Outer Variable: ' + outerVariable);\n    console.log('Inner Variable: ' + innerVariable);\n  };\n}\n\nconst newFunction = outerFunction('outside');\nnewFunction('inside');",
+            "codeType": "javascript",
             "image": ""
           },
           {
