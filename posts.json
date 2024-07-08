@@ -105,7 +105,7 @@
         "slug": "why-react-needs-key-prop",
         "title": "Why React Needs a Key Prop?",
         "description": "In the React ecosystem, the key prop is one of the most crucial aspects of managing and rendering dynamic lists.",
-        "introduction": "In the React ecosystem, the key prop is one of the most crucial aspects of managing and rendering dynamic lists. <br />Understanding why React needs a key prop is essential for any React developer.<br />This article delves into the importance of the key prop, explaining its role and providing TypeScript examples to illustrate its usage.",
+        "introduction": "In the React ecosystem, the key prop is one of the most crucial aspects of managing and rendering dynamic lists. Understanding why React needs a key prop is essential for any React developer. This article delves into the importance of the key prop, explaining its role and providing TypeScript examples to illustrate its usage.",
         "date": "08-07-2024",
         "mainImage": "./deboucing.png",
         "tags": ["react", "javascript", "frontend", "webdev"],
