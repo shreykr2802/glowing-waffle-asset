@@ -119,7 +119,7 @@
           {
             "slNo": "2",
             "heading": "Why the Key Prop is Important",
-            "html": "<ul><li><b>Optimized Rendering:</b>The primary purpose of the <pre>key</pre> prop is to help React identify which items have changed, are added, or are removed. Without keys, React would have to re-render the entire list, which can be inefficient and lead to performance issues.</li><li><b>Maintaining Component State:</b> Keys help maintain the state of components. When items in a list change, React uses the key to match the old item with the new item, preserving the state of each component.</li><b>Avoiding Reconciliation Issues:</b> Without a proper key, React's reconciliation algorithm may not function as intended, leading to unexpected behaviors and bugs in your application.<li></li></ul",
+            "html": "<ul><li><b>Optimized Rendering:</b> The primary purpose of the <code>key</code> prop is to help React identify which items have changed, are added, or are removed. Without keys, React would have to re-render the entire list, which can be inefficient and lead to performance issues.</li><li><b>Maintaining Component State:</b> Keys help maintain the state of components. When items in a list change, React uses the key to match the old item with the new item, preserving the state of each component.</li><li><b>Avoiding Reconciliation Issues:</b> Without a proper key, React's reconciliation algorithm may not function as intended, leading to unexpected behaviors and bugs in your application.</li></ul",
             "codeType": "",
             "code": "",
             "image": ""
@@ -134,7 +134,7 @@
           },
           {
             "slNo": "4",
-            "heading": "<b>Example 1: Basic List Rendering</b>",
+            "heading": "Example 1: Basic List Rendering",
             "html": "In this example, each item in the list is given a unique id which is used as the key. This ensures that React can efficiently update the list when items change.",
             "codeType": "javascript",
             "code": "import React from 'react';\ntype Item = {\n\tid: number;\n\tname: string;\n};\n\nconst ItemList: React.FC<{ items: Item[] }> = ({ items }) => {\n\treturn (\n\t\t<ul>\n\t\t\t{items.map((item) => (\n\t\t\t\t<li key={item.id}>{item.name}</li>\n\t\t\t))}\n\t\t</ul>\n\t);\n};\n\nexport default ItemList;",
@@ -142,7 +142,7 @@
           },
           {
             "slNo": "5",
-            "heading": "<b>Example 2: Handling Dynamic Data</b>",
+            "heading": "Example 2: Handling Dynamic Data",
             "html": "In this dynamic example, new items can be added to the list. Each item has a unique id, ensuring that React can track the items accurately.",
             "codeType": "javascript",
             "code": "import React, { useState } from 'react';\ntype Todo = {\n\tid: number;\n\ttask: string;\n};\n\nconst TodoList: React.FC = () => {\n\tconst [todos, setTodos] = useState<Todo[]>([\n\t\t{ id: 1, task: 'Learn TypeScript' },\n\t\t{ id: 2, task: 'Practice React' },\n\t]);\n\n\tconst addTodo = (task: string) => {\n\t\tsetTodos([...todos, { id: todos.length + 1, task }]);\n\t};\n\n\treturn (\n\t\t<div>\n\t\t\t<ul>\n\t\t\t\t{todos.map((todo) => (\n\t\t\t\t\t<li key={todo.id}>{todo.task}</li>\n\t\t\t\t))}\n\t\t\t</ul>\n\t\t\t<button onClick={() => addTodo('New Task')}>Add Todo</button>\n\t\t</div>\n\t);\n};\n\nexport default TodoList;",
@@ -150,7 +150,7 @@
           },
           {
             "slNo": "6",
-            "heading": "<b>Example 3: Using Index as a Key (Not Recommended)</b>",
+            "heading": "Example 3: Using Index as a Key (Not Recommended)",
             "html": "While using the index as a key is technically possible, it is generally not recommended because it can lead to issues when the order of items changes.<br/>React may misinterpret these changes, leading to inefficient updates and bugs.",
             "codeType": "javascript",
             "code": "import React from 'react';\n\ntype User = {\n\tname: string;\n};\n\nconst UserList: React.FC<{ users: User[] }> = ({ users }) => {\n\treturn (\n\t\t<ul>\n\t\t\t{users.map((user, index) => (\n\t\t\t\t<li key={index}>{user.name}</li>\n\t\t\t))}\n\t\t</ul>\n\t);\n};\n\nexport default UserList;",
