@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "slug": "understanding-hoisting-and-closures-in-javascript",
         "title": "Understanding Hoisting and Closures in JavaScript",
         "description": "A comprehensive guide to understanding hoisting and closures in JavaScript.",
@@ -45,6 +46,7 @@
         "artifacts": ["https://developer.mozilla.org/en-US/docs/Glossary/Hoisting", "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures"]
       },
       {
+        "id": 2,
         "slug": "understanding-debouncing-in-javascript",
         "title": "Understanding Debouncing in JavaScript",
         "description": "A comprehensive guide to understanding Debouncing in JavaScript.",
@@ -99,6 +101,7 @@
         "artifacts": ["https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous"]
       },
       {
+        "id": 3,
         "slug": "why-react-needs-key-prop",
         "title": "Why React Needs a Key Prop?",
         "description": "In the React ecosystem, the key prop is one of the most crucial aspects of managing and rendering dynamic lists.",
